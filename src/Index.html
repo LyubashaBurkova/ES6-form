@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ES6-form</title>
+  <!-- <link rel="stylesheet" href="css/style.css"></link>
+  <script src="js/config/ui.cofig.js"></script>
+  <script src="js//helpers/validate.js"></script>
+  <script src="js/app.js"></script> -->
+</head>
+  <body>
+    <div id="app">
+        <form name="sendInfo">
+            <fieldset>
+                <div class="form-group">
+                    <label>Ф.И.О.</label>
+                    <input 
+                        type="text"
+                        id="name" 
+                        placeholder="Введите ФИО"
+                        data-required="name"
+                        data-invalid-message="Заполните поле"
+                    >
+                    <!-- <span class="error">Заполните поле</span> -->
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input 
+                        type="text" 
+                        id="email"
+                        placeholder="Введите Email"
+                        data-required="email"
+                        data-invalid-message="Заполните поле"
+                    >
+                    <!-- <span class="error">Заполните поле</span> -->
+                </div>
+                <div class="form-group">
+                    <label>Телефон</label>
+                    <input 
+                        type="text" 
+                        id="phone"
+                        placeholder="Введите ФИО"
+                        data-required="phone"
+                        data-invalid-message="Заполните поле"
+                    >
+                    <!-- <span class="error">Заполните поле</span> -->
+                </div>
+            </fieldset>           
+            
+            <button type="submit" class="btn btn-primary" onclick="onSubmit()">Отправить</button>
+          </form>
+        
+    </div>
+  </body>
+</html>
